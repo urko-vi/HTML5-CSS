@@ -1,0 +1,134 @@
+/********************** FUENTES Y TEXTO *************/
+@font-face {
+	src: url("Courgette-Regular.ttf");
+	font-family: 'Courgette', cursive;
+}
+* {
+	/*font-family: 'Courgette', Arial, serif; */
+	font-size: 16px;
+}
+h1{
+	font-size: 130%;
+	font-weight:bold;
+}
+h2{
+	font-size: 120%;
+	text-decoration: underline;
+}
+h3{
+	font-size: 110%;
+	font-style: italic;
+}
+/*********************** LAYOUT PAGINA *****************/
+/*
+ body > header{
+	position: fixed;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 250px;
+	
+}
+body #wrapper{
+	position: relative;	
+	top: 250px;
+	z-index: 250;
+}
+*/
+html{
+	min-height: 100%;
+	position: relative;
+}
+body{
+	 margin-bottom: 60px;
+}
+#pie{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+}
+.degradado{
+    background: #ebf1f6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ebf1f6 0%, #abd3ee 23%, #89c3eb 64%, #d5ebfb 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ebf1f6 0%,#abd3ee 23%,#89c3eb 64%,#d5ebfb 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ebf1f6 0%,#abd3ee 23%,#89c3eb 64%,#d5ebfb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 ); /* IE6-9 */
+
+}
+strong{
+    color: #65A7BD;
+}
+/*************** CAMBIO DE ESTILOS BOTONES   ******/
+.btn-info{
+    color: #fff;
+    background-color: #65A7BD;
+    border-color: #CCE4ED;
+}
+.btn-info:hover {
+    color: #fff;
+    background-color: #B0D9EB;
+    border-color: #CCE4ED;
+}
+/**************     ESTILOS DEL MENU  ***********/
+img:hover{
+    opacity: 0.65;
+}
+.buscador{
+	margin-top: 20px;
+}
+/*
+Todas los componentes html que tengan una clase "fondo" dentro de una etiqueta html
+<header> a cualquier nivel
+*/
+header .fondo{
+	/*background-color: grey;*/
+}
+/*
+Una etiqueta html <header> que tenga clase "fondo"
+*/
+header.fondo{
+	/*background-color: pink;*/
+}
+/*
+Los primeros "hijos" dentro de un <header> que tengan como clase una clase llamada "fondo"
+*/
+header > .buscador{
+	/*background-color: red;*/
+	
+}
+a:hover{
+	color: blue;
+	text-decoration: none;
+}
+.tIcono{
+	font-size: 50px;
+	color: #F86899;
+}
+.tIcono:hover{
+	color: #006899;
+
+}
+ul.iconos-banderas{
+	list-style: none;
+}
+ul.iconos-banderas li{
+	background-image: url("../imagenes/flags.png");
+	background-repeat: none;
+	width: 49px;
+	height: 41px;
+	display: block;
+	float: left;
+}
+ul.iconos-banderas li.bandera-spain{
+	background-position: -95px -197px;
+}
+ul.iconos-banderas li.bandera-france{
+	background-position: 289px -197px;
+}	
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
